@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Sidebar from "./components/Sidebar";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
@@ -31,8 +31,8 @@ export default function App() {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="/projects">
-                Projects
+              <Nav.Link as={Link} to="/resume">
+                Resume
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">
                 Contact Me
@@ -44,22 +44,22 @@ export default function App() {
       <Container>
         <Row>
           <Col xs={6} md={4}>
-            <div className="container mt-4">
+            <Container className="mt-4">
               <Sidebar />
-            </div>
+            </Container>
           </Col>
           <Col xs={12} md={8}>
-            <div className="container mt-4">
+            <Container className="mt-4">
               <Routes>
                 <Route path="/" element={<Outlet />}>
                   <Route index element={<Home />} />
                   <Route path="/about" element={<About />} />
-                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/resume" element={<Resume />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Route>
               </Routes>
-            </div>
+            </Container>
           </Col>
         </Row>
       </Container>

@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Col,
-  Container,
-  Carousel,
-  Image,
-  ListGroup,
-  Row,
-} from "react-bootstrap";
-// import BlueLakes from "../assets/blue-lakes.jpg";
-import LaFortuna from "../assets/lafortuna.jpg";
-import AngelsLanding from "../assets/angels-landing.jpg";
+import { Container, Carousel, Image, ListGroup, Row } from "react-bootstrap";
 import theres from "../assets/been-theres";
 
 function calculateYearsAndDaysSince(dateString) {
