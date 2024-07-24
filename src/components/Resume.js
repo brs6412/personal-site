@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Tab, Tabs } from "react-bootstrap";
 import Education from "./Education";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 export default function Resume() {
   const [key, setKey] = useState("education");
@@ -22,7 +23,7 @@ export default function Resume() {
           <Skills />
         </Tab>
         <Tab eventKey="experience" title="Experience">
-          Experience content
+          <Experience />
         </Tab>
         <Tab eventKey="honors-activities" title="Honors and Activities">
           All my honors here
