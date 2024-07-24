@@ -66,8 +66,8 @@ export default function About() {
             {timeSwam.days} days.
           </ListGroup.Item>
           <ListGroup.Item>
-            Primarily a breaststroker but also a sprint free enthusiast (and mandatory IM
-            swimmer).
+            Primarily a breaststroker but also a sprint free enthusiast (and
+            mandatory IM swimmer).
           </ListGroup.Item>
           <ListGroup.Item>
             Favorite hike: Blue Lakes Trail in Colorado
@@ -91,7 +91,7 @@ export default function About() {
         </Carousel>
       </Row>
       <Row className="mb-4">
-        <h4>Check out my swimcloud profile here!</h4>
+        <h4>Swimcloud is the new LinkedIn.</h4>
         <iframe
           id="preview-frame"
           src="https://www.swimcloud.com/swimmer/606904/iframe/?splashes_type=latest"
