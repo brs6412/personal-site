@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Tab, Tabs } from "react-bootstrap";
 import Education from "./Education";
+import Skills from "./Skills";
 
 export default function Resume() {
   const [key, setKey] = useState("education");
@@ -18,7 +19,7 @@ export default function Resume() {
           <Education />
         </Tab>
         <Tab eventKey="skills" title="Skills">
-          Skills content
+          <Skills />
         </Tab>
         <Tab eventKey="experience" title="Experience">
           Experience content
