@@ -1,5 +1,7 @@
 const courses = [
   { title: "CS1 & CS2", degree: "bs", dual: false },
+  { title: "Intro to Computer Science Theory", degree: "bs", dual: false },
+  { title: "Concepts of Computer Systems", degree: "bs", dual: false },
   { title: "Intro to Software Engineering", degree: "bs", dual: false },
   { title: "Analysis of Algorithms", degree: "bs", dual: false },
   { title: "Principles of Data Management", degree: "bs", dual: false },

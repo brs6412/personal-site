@@ -66,7 +66,7 @@ export default function About() {
             {timeSwam.days} days.
           </ListGroup.Item>
           <ListGroup.Item>
-            Breaststroke primary stroke, sprint free enthusiast (mandatory IM
+            Primarily a breaststroker but also a sprint free enthusiast (and mandatory IM
             swimmer).
           </ListGroup.Item>
           <ListGroup.Item>
@@ -74,7 +74,7 @@ export default function About() {
           </ListGroup.Item>
           <ListGroup.Item>National parks visited: Zion</ListGroup.Item>
           <ListGroup.Item>Countries visited: Costa Rica</ListGroup.Item>
-          <ListGroup.Item>Can bench 225 (I have proof).</ListGroup.Item>
+          <ListGroup.Item>Can bench 235</ListGroup.Item>
         </ListGroup>
       </Row>
       <Row className="mb-4">
