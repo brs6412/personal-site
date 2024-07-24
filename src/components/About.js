@@ -32,7 +32,7 @@ export default function About() {
           I'm pursuing a BS in Computer Science and an MS in Cybersecurity,
           expected by May 2026. My academic interests revolve around
           cybersecurity news and networking security. Outside of academics, I
-          enjoy swimming, lifting, reading, cooking, and recently started
+          enjoy swimming, lifting, reading, cooking, and I also recently started
           playing golf.
         </p>
       </Row>
