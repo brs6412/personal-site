@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import workExperience from "../assets/experience";
 
-const Experience = () => {
+export default function Experience() {
   return (
     <Container>
       <h2 className="my-4">Work Experience</h2>
@@ -24,6 +24,4 @@ const Experience = () => {
       ))}
     </Container>
   );
-};
-
-export default Experience;
+}
