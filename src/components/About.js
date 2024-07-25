@@ -19,7 +19,7 @@ function calculateYearsAndDaysSince(dateString) {
 export default function About() {
   const [timeSwam, setTimeSwam] = useState({ years: 0, days: 0 });
   useEffect(() => {
-    const dateString = "2009-08-03";
+    const dateString = "2011-08-03";
     const result = calculateYearsAndDaysSince(dateString);
     setTimeSwam(result);
   }, []);
