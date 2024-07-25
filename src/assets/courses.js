@@ -10,8 +10,8 @@ const courses = [
     degree: "bs",
     dual: false,
   },
-  { title: "Foundations of Cryptography", degree: "bs", dual: true },
-  { title: "Introduction to Big Data", degree: "bs", dual: true },
+  { title: "Foundations of Cryptography", degree: "ms", dual: true },
+  { title: "Introduction to Big Data", degree: "ms", dual: true },
   { title: "Introduction to Computing Security", degree: "ms", dual: false },
   {
     title: "Introduction to Artificial Intelligence",

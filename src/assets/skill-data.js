@@ -14,7 +14,7 @@ const skillData = {
     "RESTful APIs",
     "CompTIA Security+",
     "Database Engineering",
-    "Networking",
+    "Network Engineering",
     "Version Control",
   ],
 };
