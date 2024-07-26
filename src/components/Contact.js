@@ -1,15 +1,42 @@
 import React from "react";
-
-// TODO: Create reactive/witty contact form
+import { Container, Row, Col, Card } from "react-bootstrap";
+import MailIcon from "../assets/mail-icon";
+import LinkedinIcon from "../assets/linkedin-icon";
+import GithubIcon from "../assets/github-icon";
 
 export default function Contact() {
   return (
-    <div>
-      <h2>Contact me</h2>
-      <p>
-        Feel free to get in touch. You can email me at:{" "}
-        <a href="mailto:brs6412@rit.edu">brs6412@rit.edu</a>
-      </p>
-    </div>
+    <Container>
+      <h2 className="my-4">Contact Me!</h2>
+      <Row className="mb-4">
+        <Card>
+          <Card.Body>
+            <Card.Title>
+              {"Email "}
+
+              <MailIcon />
+            </Card.Title>
+            <Card.Text></Card.Text>
+
+            <Card.Link href="mailto:brs6412@rit.edu">
+              {"brs6412@rit.edu"}
+            </Card.Link>
+          </Card.Body>
+        </Card>
+      </Row>
+      <Row className="mb-4">
+        <Card>
+          <Card.Body>
+            <Card.Title>Socials</Card.Title>
+            <a href="https://www.linkedin.com/in/ben-sippel/">
+              <LinkedinIcon />
+            </a>{" "}
+            <a href="https://github.com/brs6412/">
+              <GithubIcon />
+            </a>
+          </Card.Body>
+        </Card>
+      </Row>
+    </Container>
   );
 }
