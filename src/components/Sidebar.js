@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./MyCard";
 import Blurb from "./Blurb";
 import { Container, Row } from "react-bootstrap";
 

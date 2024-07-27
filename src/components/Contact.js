@@ -7,13 +7,12 @@ import GithubIcon from "../assets/github-icon";
 export default function Contact() {
   return (
     <Container>
-      <h2 className="my-4">Contact Me!</h2>
+      <h2 className="my-4">Contact</h2>
       <Row className="mb-4">
         <Card>
           <Card.Body>
             <Card.Title>
-              {"Email "}
-
+              {"Feel free to get in touch "}
               <MailIcon />
             </Card.Title>
             <Card.Text></Card.Text>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
 import courses from "../assets/courses";
 import Intersect from "../assets/intersect";
 
@@ -16,64 +16,60 @@ export default function Education() {
   }, []);
   return (
     <Container>
-      <Row>
-        <h4>Rochester Institute of Technology</h4>
-      </Row>
-      <Row>
+      <h2 className="my-4">Rochester Institute of Technology</h2>
+      <Row className="mb-4">
         <Col>
-          <h6>Bachelor of Science in Computer Science</h6>
+          <Card>
+            <Card.Body>
+              <Card.Title>B.S. Computer Science</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Expected May 2025
+              </Card.Subtitle>
+              <Card.Text>GPA: 3.75/4.00</Card.Text>
+              <Card.Text>Minor in Economics</Card.Text>
+              <Card.Text>Relevant courses:</Card.Text>
+              <ListGroup>
+                {coursework.map(
+                  (course) =>
+                    course.degree === "bs" && (
+                      <ListGroup.Item>{course.title}</ListGroup.Item>
+                    )
+                )}
+              </ListGroup>
+            </Card.Body>
+          </Card>
         </Col>
-        <Col className="text-end">
-          <small>Expected May 2025</small>
-        </Col>
       </Row>
-      <Row>
-        <p>GPA: 3.75/4.00</p>
-      </Row>
-      <Row>
-        <p>Minor in Economics</p>
-      </Row>
-      <Row className="mb-3">
-        <p>Relevant Coursework:</p>
-        <ListGroup>
-          {coursework.map(
-            (course) =>
-              course.degree === "bs" && (
-                <ListGroup.Item>{course.title}</ListGroup.Item>
-              )
-          )}
-        </ListGroup>
-      </Row>
-      <Row>
+      <Row className="mb-4">
         <Col>
-          <h6>Master of Science in Cybersecurity</h6>
+          <Card>
+            <Card.Body>
+              <Card.Title>M.S. Cybersecurity</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Expected May 2026
+              </Card.Subtitle>
+              <Card.Text>GPA: 4.00/4.00</Card.Text>
+              <Card.Text>Relevant courses:</Card.Text>
+              <ListGroup className="mb-4">
+                {coursework.map(
+                  (course) =>
+                    (course.degree === "ms" || course.dual) && (
+                      <ListGroup.Item>
+                        {course.title + " "}
+                        {course.dual && <Intersect />}
+                      </ListGroup.Item>
+                    )
+                )}
+              </ListGroup>
+              <Card.Text>
+                <small>
+                  <Intersect /> denotes a double counted course between BS and
+                  MS degrees
+                </small>
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </Col>
-        <Col className="text-end">
-          <small>Expected May 2026</small>
-        </Col>
-      </Row>
-      <Row>
-        <p>GPA: 4.00/4.00</p>
-      </Row>
-      <Row className="mb-3">
-        <p>Relevant Coursework:</p>
-        <ListGroup>
-          {coursework.map(
-            (course) =>
-              (course.degree === "ms" || course.dual) && (
-                <ListGroup.Item>
-                  {course.title + " "}
-                  {course.dual && <Intersect />}
-                </ListGroup.Item>
-              )
-          )}
-        </ListGroup>
-      </Row>
-      <Row className="mb-3">
-        <small>
-          <Intersect /> denotes a double counted course between BS and MS
-          degrees
-        </small>
       </Row>
     </Container>
   );
