@@ -1,0 +1,19 @@
+@import 'node_modules/bootstrap/scss/functions';
+
+// Override default Bootstrap variables
+$theme-colors: (
+  "primary": #ff5733,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #343a40
+);
+
+$body-bg: #f0f0f0;
+$font-family-base: 'Arial, sans-serif';
+
+// Import Bootstrap's main SASS file
+@import 'node_modules/bootstrap/scss/bootstrap';
