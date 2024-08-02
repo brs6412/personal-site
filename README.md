@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a personal website built using React.js and hosted on a linux-based server configured by myself. The site showcases my skills, interests, and resume as a Computer Science and Cybersecurity student.
 
-In the project directory, you can run:
+### About this site
 
-### `npm start`
+- **Responsive design**: I chose to use React.js for its responsiveness that is optimized for desktop and mobile devices. React is one of my top langugaes for building web applications.
+- **Site Deployment**: I chose to go a step further by configuring and deploying this site myself. Nginx provides fast and reliable delivery of static files all while being hosted on a lightweight Raspberry Pi. This approach gave me hands on experience with server security, including configuring firewalls and using HTTPS for secure connections.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation & Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Linux based server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository: 
+   ```
+   git clone https://github.com/brs6412/personal-site.git
+   cd personal-site
+   ```
+2. Install dependencies: `npm install`
+3. Build the React app: `npm run build`
+4. Transfer the build files to your server: `scp -r build/* username@yourserverIP:/file/location/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Create a configuration file for your site**: `sudo nano /etc/nginx/sites-available/mywebsite`
+2. **Enable your configuration**
+3. **Start the nginx server**: `sudo systemctl start nginx`
+4. **Access the site**: Open a browser and navigate to `http://your_domain_or_ip`
