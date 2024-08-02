@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Container, Carousel, Image, ListGroup, Row } from "react-bootstrap";
+import {
+  Card,
+  Container,
+  Carousel,
+  Image,
+  ListGroup,
+  Row,
+} from "react-bootstrap";
 import theres from "../assets/been-theres";
 
 function calculateYearsAndDaysSince(dateString) {
@@ -27,55 +34,71 @@ export default function About() {
   return (
     <Container>
       <Row className="mb-4">
-        <h2>About Me</h2>
-        <p>
-          I'm pursuing a BS in Computer Science and an MS in Cybersecurity,
-          expected by May 2026. My academic interests revolve around
-          cybersecurity news and networking security. Outside of academics, I
-          enjoy swimming, lifting, reading, cooking, and I also recently started
-          playing golf.
-        </p>
+        <Card>
+          <Card.Body>
+            <Card.Title>About Me</Card.Title>
+            <Card.Text>
+              I'm pursuing a BS in Computer Science and an MS in Cybersecurity,
+              expected by May 2026. My academic interests revolve around
+              cybersecurity news and networking security. Outside of academics,
+              I enjoy swimming, lifting, reading, cooking, and I also recently
+              started playing golf.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </Row>
       <Row className="mb-4">
-        <h4>Career Aspirations</h4>
-        <p>
-          I'm passionate about security engineering and application security. I
-          have internship experience as a software developer and security
-          engineer, and hold certifications in ISC<sup>2</sup> CC and CompTIA
-          Security+.
-        </p>
+        <Card>
+          <Card.Body>
+            <Card.Title>Career Aspirations</Card.Title>
+            <Card.Text>
+              I'm passionate about security engineering and application
+              security. I have internship experience as a software developer and
+              security engineer and hold the CompTIA Security+ (SY0-701)
+              certification.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </Row>
       <Row className="mb-4">
-        <h4>Personal Philosophy</h4>
-        <p>
-          I firmly believe in pushing beyond my comfort zone and embracing
-          continuous improvement in all aspects of life. Whether it's
-          implementing a new programming concept, delving deeper into
-          cybersecurity principles, or pushing myself physically during a
-          workout, I thrive on the opportunity to grow. This mindset not only
-          propels my academic and professional endeavors but also enhances my
-          personal life by cultivating a lifelong learning mentality and a sense
-          of accomplishment.
-        </p>
+        <Card>
+          <Card.Body>
+            <Card.Title>Personal Philosophy</Card.Title>
+            <Card.Text>
+              I firmly believe in pushing beyond my comfort zone and embracing
+              continuous improvement in all aspects of life. Whether it's
+              implementing a new programming concept, delving deeper into
+              cybersecurity principles, or pushing myself physically during a
+              workout, I thrive on the opportunity to grow. This mindset not
+              only propels my academic and professional endeavors but also
+              enhances my personal life by cultivating a lifelong learning
+              mentality and a sense of accomplishment.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </Row>
       <Row className="mb-4">
-        <h4>Fun Facts</h4>
-        <ListGroup>
-          <ListGroup.Item>
-            Has swam competetively for roughly {timeSwam.years} years and{" "}
-            {timeSwam.days} days.
-          </ListGroup.Item>
-          <ListGroup.Item>
-            Primarily a breaststroker but also a sprint free enthusiast (and
-            mandatory IM swimmer).
-          </ListGroup.Item>
-          <ListGroup.Item>
-            Favorite hike: Blue Lakes Trail in Colorado
-          </ListGroup.Item>
-          <ListGroup.Item>National parks visited: Zion</ListGroup.Item>
-          <ListGroup.Item>Countries visited: Costa Rica</ListGroup.Item>
-          <ListGroup.Item>Can bench 235</ListGroup.Item>
-        </ListGroup>
+        <Card>
+          <Card.Body>
+            <Card.Title>Fun Facts</Card.Title>
+            <ListGroup variant="flush">
+              <ListGroup.Item>
+                Has swam competitively for roughly {timeSwam.years} years and{" "}
+                {timeSwam.days} days.
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Primarily a breaststroker but also a sprint free enthusiast (and
+                mandatory IM swimmer).
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Favorite hike: Blue Lakes Trail in Colorado
+              </ListGroup.Item>
+              <ListGroup.Item>National parks visited: Zion</ListGroup.Item>
+              <ListGroup.Item>Countries visited: Costa Rica</ListGroup.Item>
+              <ListGroup.Item>Can bench 235</ListGroup.Item>
+            </ListGroup>
+          </Card.Body>
+        </Card>
       </Row>
       <Row className="mb-4">
         <Carousel>

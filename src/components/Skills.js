@@ -14,6 +14,7 @@ const SkillList = () => {
                 <Card.Body>
                   <Card.Title>{skill.name}</Card.Title>
                   <ProgressBar
+                    variant="envy"
                     now={skill.level}
                     label={`${skill.level}%`}
                     visuallyHidden

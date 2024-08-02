@@ -12,12 +12,12 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Sidebar from "./components/Sidebar";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import "./App.css";
+import "./main.scss";
 
 export default function App() {
   return (
     <Router>
-      <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+      <Navbar expand="lg" className="navbar-custom">
         <Container>
           <Navbar.Brand as={Link} to="/">
             Ben Sippel

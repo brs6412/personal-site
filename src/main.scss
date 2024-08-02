@@ -1,0 +1,54 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+$body-bg: #bfbfbf;
+$font-stack: 'Oswald', sans-serif;
+$nav-bg: #33667c;
+$navbar-light-color: #dbdada;
+$navbar-light-hover-color: lighten(#dbdada, 10%);
+$progress-bar-bg: #6e9594;
+
+* {
+  font-family: $font-stack;
+}
+
+.navbar-custom {
+  background-color: $nav-bg !important;
+  .navbar-nav .nav-link {
+    color: $navbar-light-color !important;
+    &:hover {
+      color: $navbar-light-hover-color !important;
+    }
+  }
+  .navbar-brand {
+    color: $navbar-light-color !important;
+    &:hover {
+      color: $navbar-light-hover-color !important;
+    }
+  }
+}
+
+.bg-envy {
+  background-color: $progress-bar-bg !important;
+}
+
+a {
+  color: #6c757d !important;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}
+
+a:active {
+  color: #9aa79b;
+}
+
+.nav-tabs .nav-link {
+  color: $nav-bg;
+}
+
+@import 'node_modules/bootstrap/scss/bootstrap';
