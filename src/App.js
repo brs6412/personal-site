@@ -17,7 +17,7 @@ import "./main.scss";
 export default function App() {
   return (
     <Router>
-      <Navbar expand="lg" bg="light" data-bs-theme="light">
+      <Navbar expand="lg" className="navbar-custom">
         <Container>
           <Navbar.Brand as={Link} to="/">
             Ben Sippel

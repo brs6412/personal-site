@@ -1,19 +1,58 @@
 @import 'node_modules/bootstrap/scss/functions';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-// Override default Bootstrap variables
-$theme-colors: (
-  "primary": #ff5733,
-  "secondary": #6c757d,
-  "success": #28a745,
-  "info": #17a2b8,
-  "warning": #ffc107,
-  "danger": #dc3545,
-  "light": #f8f9fa,
-  "dark": #343a40
-);
+$body-bg: #bfbfbf;
+$font-stack: 'Oswald', sans-serif;
+$nav-bg: #33667c;
+$navbar-light-color: #dbdada;
+$navbar-light-hover-color: lighten(#dbdada, 10%);
+$progress-bar-bg: #6e9594;
 
-$body-bg: #f0f0f0;
-$font-family-base: 'Arial, sans-serif';
+* {
+  font-family: $font-stack;
+}
+
+.navbar-custom {
+  background-color: $nav-bg !important;
+  .navbar-nav .nav-link {
+    color: $navbar-light-color !important;
+    &:hover {
+      color: $navbar-light-hover-color !important;
+    }
+  }
+  .navbar-brand {
+    color: $navbar-light-color !important;
+    &:hover {
+      color: $navbar-light-hover-color !important;
+    }
+  }
+}
+
+.bg-envy {
+  background-color: $progress-bar-bg !important;
+}
+
+a {
+  color: #6c757d !important;
+  background: linear-gradient(to right, #ff5733, #9aa79b);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #000000; // Underline color on hover
+}
+
+a:active {
+  color: #9aa79b; // Active link color
+}
+
+.nav-tabs .nav-link {
+  color: $nav-bg; // Custom color for inactive tab text
+}
 
 // Import Bootstrap's main SASS file
 @import 'node_modules/bootstrap/scss/bootstrap';

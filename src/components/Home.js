@@ -7,8 +7,8 @@ export default function Home() {
         <h2>Home</h2>
         <p>
           Welcome to my website. Please feel free to read more{" "}
-          <a href="/about">about me</a>, or you can check out my resume,
-          projects, or contact me.
+          <a href="/about">about me</a>, or you can check out my{" "}
+          <a href="/resume">resume</a>, or <a href="/contact">contact</a> me.
         </p>
       </div>
       <div>
