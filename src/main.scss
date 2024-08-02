@@ -34,25 +34,21 @@ $progress-bar-bg: #6e9594;
 
 a {
   color: #6c757d !important;
-  background: linear-gradient(to right, #ff5733, #9aa79b);
-  -webkit-background-clip: text;
-  color: transparent;
   text-decoration: none;
   transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: #000000; // Underline color on hover
+  text-decoration-color: #000000;
 }
 
 a:active {
-  color: #9aa79b; // Active link color
+  color: #9aa79b;
 }
 
 .nav-tabs .nav-link {
-  color: $nav-bg; // Custom color for inactive tab text
+  color: $nav-bg;
 }
 
-// Import Bootstrap's main SASS file
 @import 'node_modules/bootstrap/scss/bootstrap';
