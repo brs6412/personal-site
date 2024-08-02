@@ -40,12 +40,12 @@ export default function App() {
       </Navbar>
       <Container>
         <Row>
-          <Col xs={6} md={4}>
+          <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
             <Container className="mt-4">
               <Sidebar />
             </Container>
           </Col>
-          <Col xs={12} md={8}>
+          <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
             <Container className="mt-4">
               <Routes>
                 <Route path="/" element={<Outlet />}>
