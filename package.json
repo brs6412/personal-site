@@ -1,7 +1,7 @@
 {
   "name": "bensippel-website",
   "version": "0.1.0",
-  "homepage": "https://brs6412.github.io/personal-site/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
