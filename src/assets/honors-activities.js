@@ -13,6 +13,11 @@ const honorsActivities = {
       desc: "Taught programming skills and syntax to young students",
     },
     {
+      title: "RITSEC Club Member",
+      date: "Sep 2024 - Present",
+      desc: "",
+    },
+    {
       title: "RIT Varsity Swim and Dive",
       date: "Aug 2021 - Present",
       stats: [

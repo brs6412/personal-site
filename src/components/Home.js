@@ -14,9 +14,12 @@ export default function Home() {
       <div>
         <h4>About this site</h4>
         <p>
-          This site is being hosted on a Raspberry pi configured by myself. The
-          pi is running a web server, providing fast and reliable delivery of
-          web content.
+          This site is being hosted on Github pages, configured to use the
+          custom domain that I own. During test, I hosted it locally on a
+          Raspberry Pi that I configured myself. I served the web files using
+          Nginx, and I also implemented SSL/TLS certificates for HTTPS and
+          established firewall rules with UFW to simulate securing a dedicated
+          public facing web server.
         </p>
         <p>
           <p>
