@@ -14,12 +14,12 @@ export default function Home() {
       <div>
         <h4>About this site</h4>
         <p>
-          This site is being hosted on Github pages, configured to use the
-          custom domain that I own. During test, I hosted it locally on a
-          Raspberry Pi that I configured myself. I served the web files using
-          Nginx, and I also implemented SSL/TLS certificates for HTTPS and
-          established firewall rules with UFW to simulate securing a dedicated
-          public facing web server.
+          This site is being hosted on Github pages, configured to use my own
+          custom domain. During test, I hosted the site locally on a Raspberry
+          Pi. I configured the Pi to serve the web files using Nginx, and I also
+          implemented SSL/TLS certificates for HTTPS and established firewall
+          rules with UFW to simulate securing a dedicated public facing web
+          server.
         </p>
         <div>
           <p>
