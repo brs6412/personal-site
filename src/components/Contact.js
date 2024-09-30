@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Card } from "react-bootstrap";
 import MailIcon from "../assets/mail-icon";
 import LinkedinIcon from "../assets/linkedin-icon";
 import GithubIcon from "../assets/github-icon";

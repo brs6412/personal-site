@@ -103,7 +103,7 @@ export default function About() {
       <Row className="mb-4">
         <Carousel>
           {theres.map((there) => (
-            <Carousel.Item>
+            <Carousel.Item key={there.title}>
               <Image src={there.img} fluid alt={there.title} />
               <Carousel.Caption>
                 <h5>{there.title}</h5>
@@ -120,7 +120,6 @@ export default function About() {
           src="https://www.swimcloud.com/swimmer/606904/iframe/?splashes_type=latest"
           width="100%"
           height="500px"
-          frameborder="0"
           title="Ben Sippel Swimming"
         ></iframe>
       </Row>

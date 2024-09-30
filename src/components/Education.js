@@ -32,7 +32,9 @@ export default function Education() {
                 {coursework.map(
                   (course) =>
                     course.degree === "bs" && (
-                      <ListGroup.Item>{course.title}</ListGroup.Item>
+                      <ListGroup.Item key={course.title}>
+                        {course.title}
+                      </ListGroup.Item>
                     )
                 )}
               </ListGroup>
@@ -54,7 +56,7 @@ export default function Education() {
                 {coursework.map(
                   (course) =>
                     (course.degree === "ms" || course.dual) && (
-                      <ListGroup.Item>
+                      <ListGroup.Item key={course.title}>
                         {course.title + " "}
                         {course.dual && <Intersect />}
                       </ListGroup.Item>

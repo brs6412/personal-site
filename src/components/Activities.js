@@ -29,14 +29,14 @@ export default function HonorsActivities() {
                 <Card.Subtitle className="mb-2 text-muted">
                   {activity.date}
                 </Card.Subtitle>
-                {activity.desc ? (
-                  <Card.Text>{activity.desc}</Card.Text>
-                ) : (
+                {activity.stats ? (
                   <ListGroup variant="flush">
                     {activity.stats.map((stat, i) => (
                       <ListGroup.Item key={i}>{stat}</ListGroup.Item>
                     ))}
                   </ListGroup>
+                ) : (
+                  <Card.Text>{activity.desc}</Card.Text>
                 )}
               </Card.Body>
             </Card>

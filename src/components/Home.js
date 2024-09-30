@@ -21,7 +21,7 @@ export default function Home() {
           established firewall rules with UFW to simulate securing a dedicated
           public facing web server.
         </p>
-        <p>
+        <div>
           <p>
             This website is crafted using React JavaScript coupled with the
             React Bootstrap framework. React allows for creation of dynamic and
@@ -31,7 +31,7 @@ export default function Home() {
           <a href="https://github.com/brs6412/bensippel-website">
             View page source here.
           </a>
-        </p>
+        </div>
       </div>
     </div>
   );
